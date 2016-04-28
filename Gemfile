@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass', '~> 3.3.0.1'
 gem 'devise', '~> 3.4.1'
+gem 'carrierwave'
 group :development, :test do
   gem 'byebug'
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160427211720) do
+ActiveRecord::Schema.define(version: 20160428203554) do
 
   create_table "answers", force: :cascade do |t|
     t.integer  "question_id", limit: 4
@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(version: 20160427211720) do
     t.datetime "updated_at",                null: false
     t.integer  "user_id",     limit: 4
     t.integer  "category_id", limit: 4
+    t.string   "file",        limit: 255
+    t.string   "filename",    limit: 255
+    t.string   "filelink",    limit: 255
   end
 
   add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree

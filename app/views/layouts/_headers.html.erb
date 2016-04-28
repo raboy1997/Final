@@ -14,7 +14,8 @@
           <ul class="nav navbar-nav pull-right active">
 
             <% if user_signed_in? %>
-                        Signed in as <%= current_user.email %>. Not you?
+
+                <li class="active">   <%= link_to "New Article", new_article_path %> </li>
 
                 <li class="active">  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
 
@@ -23,6 +24,8 @@
                     <% end %>
 
           </ul>
+
+
 
         </div>
       </div>

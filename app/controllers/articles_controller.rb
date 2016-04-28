@@ -60,12 +60,16 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.json
   def destroy
-    @article.destroy
+    @article = Article.find(params[:id])
+    if @article.present?
+      @article.destroy
+    end
     respond_to do |format|
       format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -75,6 +79,11 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :content , :category_id)
+      params.require(:article).permit(:title, :content  , :category_id , :filename , :filelink  )
     end
 end
+
+
+
+
+
