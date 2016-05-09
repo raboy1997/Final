@@ -15,6 +15,7 @@ gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass', '~> 3.3.0.1'
 gem 'devise', '~> 3.4.1'
 gem 'carrierwave'
+gem 'pg' 
 gem 'activeadmin', '~> 1.0.0.pre2'
 group :development, :test do
   gem 'byebug'
@@ -27,3 +28,4 @@ group :development do
   gem 'spring'
 end
 
+gem "rails_12factor", group: :production
