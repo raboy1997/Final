@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
-    @article = current_user.articles.build
+    @article = Article.find(params[:id])
   end
 
   # POST /articles
@@ -49,6 +49,7 @@ class ArticlesController < ApplicationController
   # PATCH/PUT /articles/1
   # PATCH/PUT /articles/1.json
   def update
+    @article = current_user.articles.build
     respond_to do |format|
       if @article.update(article_params)
         format.html { redirect_to @article, notice: 'Article was successfully updated.' }
@@ -82,7 +83,7 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :content  , :category_id , :filename , :filelink  )
+      params.require(:article).permit(:title, :content  , :category_id , :filename , :filelink , :test_name , :test_link  )
     end
   def admin_user
     redirect_to(root_url) unless current_user.admin?

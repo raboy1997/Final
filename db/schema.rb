@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160504173829) do
+ActiveRecord::Schema.define(version: 20160508172357) do
 
   create_table "answers", force: :cascade do |t|
     t.integer  "question_id", limit: 4
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20160504173829) do
     t.string   "file",        limit: 255
     t.string   "filename",    limit: 255
     t.string   "filelink",    limit: 255
+    t.string   "test_name",   limit: 255
+    t.string   "test_link",   limit: 255
   end
 
   add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree
