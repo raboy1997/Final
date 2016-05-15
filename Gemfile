@@ -16,6 +16,7 @@ gem 'bootstrap-sass', '~> 3.3.0.1'
 gem 'devise', '~> 3.4.1'
 gem 'carrierwave'
 gem 'pg'
+gem "dynamic_form"
 gem 'activeadmin', '~> 1.0.0.pre2'
 group :development, :test do
   gem 'byebug'
