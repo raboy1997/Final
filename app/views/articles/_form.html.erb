@@ -23,13 +23,13 @@
             <p><%= f.collection_select :category_id, Category.all, :id, :name, { promt: "Choose a Category" } %></p>
             </div>
           <div class="form-group">
-            <label for="concept" class="col-sm-3 control-label">Название темы</label>
+            <label for="concept" class="col-sm-3 control-label">Назва теми</label>
             <div class="col-sm-9">
             <%= f.text_field :title %>
             </div>
           </div>
           <div class="form-group">
-            <label for="description" class="col-sm-3 control-label">Краткое описание темы </label>
+            <label for="description" class="col-sm-3 control-label"> Ім'я файлу </label>
             <div class="col-sm-9">
              <%= f.text_area :content %>
             </div>
@@ -41,26 +41,26 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="amount" class="col-sm-3 control-label">Ссылка на файл</label>
+            <label for="amount" class="col-sm-3 control-label">Посилання на файл</label>
             <div class="col-sm-9">
               <%= f.text_field :filelink %>
             </div>
           </div>
           <div class="form-group">
-            <label for="amount" class="col-sm-3 control-label">Имя теста</label>
+            <label for="amount" class="col-sm-3 control-label">Ім'я тесту</label>
             <div class="col-sm-9">
               <%= f.text_field :test_name %>
             </div>
           </div>
           <div class="form-group">
-            <label for="amount" class="col-sm-3 control-label">Ссылка на тест</label>
+            <label for="amount" class="col-sm-3 control-label">Посилання на тест</label>
             <div class="col-sm-9">
               <%= f.text_field :test_link %>
             </div>
           </div>
           <div class="form-group">
             <div class="col-sm-12 text-right">
-              <input  class="btn btn-default preview-add-button " name="commit" type="submit" value="Add"/>
+              <input  class="btn btn-default preview-add-button " name="commit" type="submit" value="Додати"/>
             </div>
           </div>
         </div>
