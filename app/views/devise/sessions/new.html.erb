@@ -11,19 +11,19 @@
       </div>
 
       <div class="field">
-        <label for="user_password">Password</label></br>
+        <label for="user_password">Пароль</label></br>
         <input autocomplete="off" type="password" name="user[password]" id="user_password">
       </div>
 
       <% if devise_mapping.rememberable? -%>
           <div class="field">
             <input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
-            <label for="user_remember_me">Remember me</label>
+            <label for="user_remember_me">Заповнити мене</label>
           </div>
       <% end -%>
 
       <div class="actions">
-        <input type="submit" name="commit" value="Войти" class="btn btn-large btn-primary">
+        <input type="submit" name="commit" value="Ввійти" class="btn btn-large btn-primary">
       </div>
   <% end %>
 
