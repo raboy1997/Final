@@ -15,8 +15,22 @@
 
 }
 
-#resourse_password{
-
-
+#article_title , #article_content , #article_filename , #article_filelink , #article_test_name , #article_test_link  {
+  border: 1px solid #cccccc; //цвет рамки
+  border-radius: 3px; //закругление углов (общее)
+  -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+  -moz-border-radius: 3px; //закругление углов (FireFox)
+  -khtml-border-radius: 3px; //закругление углов (Safari)
+  background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+  outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+  height: 32px; // высота на свое усмотрение
+  width: 200px; // ширина на свое усмотрение
+  color: black; //цвет шрифта в обычном состоянии
+  font-size: 21px; // Размер шрифта
+  font-family: Tahoma; // Стиль шрифта
 }
 
+
+#article_content{
+  height: 50px;
+}

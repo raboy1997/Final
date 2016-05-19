@@ -25,31 +25,31 @@
           <div class="form-group">
             <label for="concept" class="col-sm-3 control-label">Название темы</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="article_title" name="article[title]" >
+            <%= f.text_field :title %>
             </div>
           </div>
           <div class="form-group">
             <label for="description" class="col-sm-3 control-label">Краткое описание темы </label>
             <div class="col-sm-9">
-              <textarea  class="form-control" id="article_content" name="article[content]" ></textarea>
+             <%= f.text_area :content %>
             </div>
           </div>
           <div class="form-group">
             <label for="amount" class="col-sm-3 control-label">Имя файла</label>
             <div class="col-sm-9">
-              <input type="text"  class="form-control"  id="article_filename" name="article[filename]">
+              <%= f.text_field :filename %>
             </div>
           </div>
           <div class="form-group">
             <label for="amount" class="col-sm-3 control-label">Ссылка на файл</label>
             <div class="col-sm-9">
-              <input type="text"  class="form-control"  id="article_filelink" name="article[filelink]" >
+              <%= f.text_field :filelink %>
             </div>
           </div>
           <div class="form-group">
             <label for="amount" class="col-sm-3 control-label">Имя теста</label>
             <div class="col-sm-9">
-              <input type="text"  class="form-control" id="article_test_name" name="article[test_name]" >
+              <%= f.text_field :test_name %>
             </div>
           </div>
           <div class="form-group">

@@ -10,22 +10,23 @@
 
 
       <div class="field">
-       <%= f.label :email %>
+       <%= f.label :email %> </br>
         <%= f.email_field :email %>
 
       </div>
 
       <div class="field">
-        <label for="user_password">Password</label>
+        <label for="user_password">Пароль  <em>(миннимум 8 символов)</em> </label></br>
+
         <% if @minimum_password_length %>
-            <em>(миннимум 8 символов)</em>
-        <% end %><br />
+
+        <% end %>
         <input autocomplete="off" type="password" name="user[password]" id="user_password">
       </div>
 
 
       <div class="field">
-        <label for="user_password_confirmation">Password confirmation</label>
+        <label for="user_password_confirmation">Подтверждение пароля </label> </br>
         <input autocomplete="off" type="password" name="user[password_confirmation]" id="user_password_confirmation">
       </div>
 
